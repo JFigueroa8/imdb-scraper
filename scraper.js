@@ -33,7 +33,7 @@ function getMovie(imdbID) {
   return fetch(`${movieUrl}${imdbID}`)
     .then(response => response.text())
     .then(body => {
-      console.log(body)
+      //console.log(body)
       return {body}
     })
 }
